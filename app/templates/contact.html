@@ -26,6 +26,13 @@
       {% endfor %}
     </p>
     <p>
+      {{ form.zip_code.label }}
+      {{ form.zip_code() }}
+      {% for error in form.zip_code.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+      {% endfor %}
+    </p>
+    <p>
       {{ form.submit() }}
     </p>
   </form>

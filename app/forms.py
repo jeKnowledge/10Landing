@@ -7,5 +7,6 @@ class ContactForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired("Please enter your name")])
     email = EmailField('Email', validators=[DataRequired("Please enter an email"),
      Email("Please enter a valid email")])
-    phone = IntegerField('Phone Number') #TODO: Phone number validators
+    phone = IntegerField('Phone Number', validators=[DataRequired("Please enter a phone number")]) #TODO: Phone number validators
+    zip_code = IntegerField('Zip Code', validators=[DataRequired("Please enter a zip code")])
     submit = SubmitField('Submit')
