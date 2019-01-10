@@ -16,6 +16,7 @@ class Contact(db.Model):
     name = db.Column(db.String(32))
     email = db.Column(db.String(64))
     phone = db.Column(db.Integer())
+    #ADD ZIP CODE
 
 admin.add_view(ModelView(Contact, db.session))
 

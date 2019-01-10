@@ -12,6 +12,10 @@ def about():
     cena = "Wow! Que cena fixe"
     return render_template('about.html', cena=cena)
 
+@app.route('/plans')
+def plans():
+    return render_template('plans.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
