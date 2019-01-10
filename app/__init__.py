@@ -16,7 +16,7 @@ class Contact(db.Model):
     name = db.Column(db.String(32))
     email = db.Column(db.String(64))
     phone = db.Column(db.Integer())
-    zip_code = db.Column(db.Integer())
+    zip = db.Column(db.Integer())
 
     def __repr__(self):
         return '<Contact {}>'.format(self.name)
