@@ -170,3 +170,6 @@ dmypy.json
 
 ### Python Patch ###
 .venv/
+
+# Database
+asurea_landing.db
