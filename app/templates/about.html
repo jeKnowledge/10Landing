@@ -1,5 +1,15 @@
 {% extends "base.html" %}
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130483675-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-130483675-1');
+  </script>  
+</head>
 {% block content %}
 <p>Asurea é uma cena bue fixe bla bla bla bla bla</p>
 <p>Olha uma cena vinda do servidor {{ cena }}</p>
